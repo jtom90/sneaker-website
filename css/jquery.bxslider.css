@@ -31,9 +31,9 @@
 
 .bx-wrapper .bx-viewport {
 	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border:  5px solid #fff;
+	/*-webkit-box-shadow: 0 0 5px #ccc;*/
+	/*box-shadow: 0 0 5px #ccc;*/
+	/*border:  5px solid #fff;*/
 	left: -5px;
 	background: #fff;
 	
@@ -196,9 +196,11 @@
 }
 
 .bx-wrapper .bx-caption span {
-	color: #fff;
+	color:black;
 	font-family: Arial;
 	display: block;
 	font-size: .85em;
-	padding: 10px;
+	padding: 20px;
+	text-align:center;
+	background-color:white;
 }

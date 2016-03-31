@@ -14,50 +14,91 @@
 </head>
 <body>
 	<form id="search">
+
         <input type="text" placeholder="Search..." required>
+
         <input type="button" value="Search">
+
 	</form>
+
 	<h1><a href="index.html">Royale</a></h1>
+
 	<nav class="left">
+
 		<ul>
+
 			<li><a href="buy.html">BUY</a></li>
+
 			<li><a href="sell.html">SELL</a></li>
+
 			<li><a href="trade.html">TRADE</a></li>
+
 			<li><a href="news.html">NEWS</a></li>
+
 			<li class="messages"><i class="fa fa-inbox"></i><a href="#">Messages</a></li>
+
 			<li class="join">Join</li>
+
 			<li class="sign">Sign-Up</li>
+
 		</ul>
+
 	</nav>
+
 	<nav id="second-nav">
+
 		<ul>
+
 			<li class="sell">Brands</li>
-			<li><a href="#">Jordan</a></li>
-			<li><a href="#">Nike</a></li>
-			<li><a href="#">Adidas</a></li>
-			<li><a href="#">Yeezys</a></li>
-			<li><a href="#">Under Armour</a></li>
+
+			<li class="jordan1">Jordan</li>
+
+			<li class="nike1">Nike</li>
+
+			<li class="adidas1">Adidas</a></li>
+
+			<li class="yeezy1">Yeezys</a></li>
+
+			<li class="under-armour1">Under Armour</a></li>
+
 		</ul>
+
 	</nav>
+
 	<h2>Trading</h2>
+
 	<div class="container-fluid">
-		<div class="col-xs-4 row3">
+
+		<div class="col-xs-4 row3 asics">
+
 			<figure>
+
 				<img src="images/asics.jpg">
+
 					<figcaption>
+
 						Asics for Roshes
+
 					</figcaption>
+
 			</figure>
-			</div>
-		<div class="col-xs-4 row3">
+
+		</div><!--  ** end div row 3 ** -->
+		<div class="col-xs-4 row3 nike">
+
 			<figure>
-			<img src="images/roshe2.jpg">
-				<figcaption>
+
+				<img src="images/roshe2.jpg">
+
+					<figcaption>
+
 					Roshe One for Roshes
-				</figcaption>
+
+					</figcaption>
+
 		</figure>
 		</div>
-		<div class="col-xs-4 row3">
+		<div class="col-xs-4 row3 nike">
 			<figure>
 				<img src="images/kyrie2.jpg">
 					<figcaption>
@@ -100,6 +141,35 @@
 				<img src="images/youtube.png" alt="">
 		</div>
 	</div>
+
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+
+	<script>
+	$(".nike1").click(function() {
+			$(".nike").show();
+			$(".adidas").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".jordan1").click(function() {
+			$(".jordan").show();
+			$(".adidas").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".adidas1").click(function() {
+			$(".adidas").show();
+			$(".nike").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".under-armour1").click(function() {
+			$(".under-armour").show();
+			$(".nike").hide();
+			$(".asics").hide();
+			$(".adidas").hide();
+		});
+		</script>
 
 	
 </body>
