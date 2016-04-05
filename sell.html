@@ -5,7 +5,7 @@
 	<title>Sell</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="js/bootstrap.min.js">
+	<!-- <link rel="stylesheet" href="js/bootstrap.min.js"> -->
 	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
@@ -14,119 +14,256 @@
 </head>
 <body>
 	<form id="search">
+
         <input type="text" placeholder="Search..." required>
+
         <input type="button" value="Search">
+
 	</form>
+
 	<h1><a href="index.html">Royale</a></h1>
+
 	<nav class="left">
+
 		<ul>
+
 			<li><a href="buy.html">BUY</a></li>
+
 			<li><a href="sell.html">SELL</a></li>
+
 			<li><a href="trade.html">TRADE</a></li>
+
 			<li><a href="news.html">NEWS</a></li>
+
 			<li class="messages"><i class="fa fa-inbox"></i><a href="#">Messages</a></li>
+
 			<li class="join">Join</li>
+
 			<li class="sign">Sign-Up</li>
+
 		</ul>
-	</nav>
+
+	</nav><!--  ** end of left div ** -->
 	<nav id="second-nav">
+
 		<ul>
+
 			<li class="sell">Brands</li>
-			<li><a href="#">Jordan</a></li>
-			<li><a href="#">Nike</a></li>
-			<li><a href="#">Adidas</a></li>
-			<li><a href="#">Yeezys</a></li>
-			<li><a href="#">Under Armour</a></li>
+
+			<li class="jordan1">Jordan</li>
+
+			<li class="nike1">Nike</li>
+
+			<li class="adidas1">Adidas</a></li>
+
+			<li class="yeezy1">Yeezys</a></li>
+
+			<li class="under-armour1">Under Armour</a></li>
+
 		</ul>
-	</nav>
+
+	</nav><!-- ** end of second-nav div ** -->
 	<h2>Selling</h2>
+
 	<div class="container-fluid">
-		<div class="col-xs-4">
+
+		<div class="col-xs-4 adidas">
+
 			<figure>
+
 				<img src="images/superstar.jpg">
+
 					<figcaption>
+
 						Adidas Superstar $100
+
 					</figcaption>
+
 			</figure>
+
 		</div>
-		<div class="col-xs-4">
+
+		<div class="col-xs-4 adidas">
+
 			<figure>
+
 				<img src="images/tubular.jpg">
+
 					<figcaption>
+
 						Adidas Tubular $200
+
 					</figcaption>
+
 			</figure>
+
 		</div>
-		<div class="col-xs-4">
+
+		<div class="col-xs-4 adidas">
+
 			<figure>
+
 				<img src="images/yeezy.jpg">
+
 					<figcaption>
+
 						Yeezy Boost $900
+
 					</figcaption>
+
 			</figure>
+
 		</div>
+
 	</div>
+
 	<div class="container-fluid">
-		<div class="col-xs-4 row2">
+
+		<div class="col-xs-4 row2 nike">
+
 			<figure>
+
 				<img src="images/airmax90.jpg">
+
 					<figcaption>
+
 						Airmax 90s $150
+
 					</figcaption>
+
 			</figure>
+
 		</div>
-		<div class="col-xs-4 row2">
+		<div class="col-xs-4 row2 nike">
+
 			<figure>
+
 				<img src="images/lebron.jpg">
+
 					<figcaption>
+
 						Lebron XIII $400
+
 					</figcaption>
+
 			</figure>
+
 		</div>
-		<div class="col-xs-4 row2">
+
+		<div class="col-xs-4 row2 under-armour">
+
 			<figure>
+
 				<img src="images/curry2.jpg">
+
 					<figcaption>
+
 						Curry 2 $200
+
 					</figcaption>
+
 			</figure>
+
 		</div>
+
 	</div>
+
 	</div>
+
 		<div class="pages">
+
 		<li><a href="#">1</a></li>
+
 		<li><a href="#">2</a></li>
+
 		<li><a href="#">3</a></li>
+
 		<li><a href="#">4</a></li>
+
 		<li><a href="#">5</a></li>
+
 		<li><a href="#">6</a></li>
+
 		<li><a href="#">7</a></li>
+
 		<li><a href="#">8</a></li>
+
 		<li><a href="#">Next</a></li>
+
 	</div>
+
 	<div class="footer">
+
 		<div class="email">
+
 			<li>SIGN UP FOR NEWSLETTER</li>
+
 				<form>
+
 					<input type="text"></input>
+
 				</form>
-		</div>
+
+		</div><!-- ** end email div ** -->
 		<div class="order">
+
 			<li class="title1">Help with Order?</li>
+
 			<li>Returns</li>
+
 			<li>Shipping</li>
+
 			<li>Order Status</li>
+
 			<li>Contact Us</li>
+
 			<li>Careers</li>
+
 		</div>
+
 		<div class="socialmedia">
+
 			<h4>Follow Us</h4>
+
 				<img src="images/facebook.png" alt="">
+
 				<img src="images/twitter.png" alt="">
+
 				<img src="images/insta.png" alt="">
+
 				<img src="images/youtube.png" alt="">
-		</div>
-	</div>
+		</div><!-- ** end div social media ** -->
+
+	</div><!-- ** end footer div ** -->
+
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
 	
+	<script>
+		$(".nike1").click(function() {
+			$(".nike").show();
+			$(".adidas").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".jordan1").click(function() {
+			$(".jordan").show();
+			$(".adidas").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".adidas1").click(function() {
+			$(".adidas").show();
+			$(".nike").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".under-armour1").click(function() {
+			$(".under-armour").show();
+			$(".nike").hide();
+			$(".asics").hide();
+			$(".adidas").hide();
+		});
+	</script>
+
 </body>
 </html>

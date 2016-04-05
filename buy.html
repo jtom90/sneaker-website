@@ -32,16 +32,16 @@
 	<nav id="second-nav">
 		<ul>
 			<li class="sell">Brands</li>
-			<li><a href="#">Jordan</a></li>
-			<li><a href="#">Nike</a></li>
-			<li><a href="#">Adidas</a></li>
-			<li><a href="#">Yeezys</a></li>
-			<li><a href="#">Under Armour</a></li>
+			<li class="jordan1">Jordan</li>
+			<li class="nike1">Nike</li>
+			<li class="adidas1">Adidas</li>
+			<li class="yeezy1">Yeezys</li>
+			<li class="under-armour1">Under Armour</li>
 		</ul>
 	</nav>
 	<h2>Buying</h2>
 	<div class="container-fluid">
-		<div class="col-xs-4">
+		<div class="col-xs-4 adidas">
 			<figure>
 				<img src="images/superstar.jpg">
 					<figcaption>
@@ -49,7 +49,7 @@
 					</figcaption>
 			</figure>
 		</div>
-		<div class="col-xs-4">
+		<div class="col-xs-4 adidas">
 			<figure>
 				<img src="images/tubular.jpg">
 					<figcaption>
@@ -57,7 +57,7 @@
 					</figcaption>
 			</figure>
 		</div>
-		<div class="col-xs-4">
+		<div class="col-xs-4 adidas">
 			<figure>
 				<img src="images/yeezy.jpg">
 					<figcaption>
@@ -67,7 +67,7 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-		<div class="col-xs-4 row2">
+		<div class="col-xs-4 row2 nike">
 			<figure>
 				<img src="images/airmax90.jpg">
 					<figcaption>
@@ -75,7 +75,7 @@
 					</figcaption>
 			</figure>
 		</div>
-		<div class="col-xs-4 row2">
+		<div class="col-xs-4 row2 nike">
 			<figure>
 				<img src="images/lebron.jpg">
 					<figcaption>
@@ -83,7 +83,7 @@
 					</figcaption>
 			</figure>
 		</div>
-		<div class="col-xs-4 row2">
+		<div class="col-xs-4 row2 under-armour">
 			<figure>
 				<img src="images/curry2.jpg">
 					<figcaption>
@@ -92,7 +92,7 @@
 			</figure>
 		</div>
 	<div class="container-fluid">
-		<div class="col-xs-4 row3">
+		<div class="col-xs-4 row3 asics">
 			<figure>
 				<img src="images/asics.jpg">
 					<figcaption>
@@ -100,7 +100,7 @@
 					</figcaption>
 			</figure>
 			</div>
-		<div class="col-xs-4 row3">
+		<div class="col-xs-4 row3 nike">
 			<figure>
 			<img src="images/roshe2.jpg">
 				<figcaption>
@@ -108,7 +108,7 @@
 				</figcaption>
 		</figure>
 		</div>
-		<div class="col-xs-4 row3">
+		<div class="col-xs-4 row3 nike">
 			<figure>
 				<img src="images/kyrie2.jpg">
 					<figcaption>
@@ -151,6 +151,42 @@
 				<img src="images/youtube.png" alt="">
 		</div>
 	</div>
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script>
+		$(".nike1").click(function() {
+			$(".nike").show();
+			$(".adidas").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".jordan1").click(function() {
+			$(".jordan").show();
+			$(".adidas").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".adidas1").click(function() {
+			$(".adidas").show();
+			$(".nike").hide();
+			$(".asics").hide();
+			$(".under-armour").hide();
+		});
+		$(".under-armour1").click(function() {
+			$(".under-armour").show();
+			$(".nike").hide();
+			$(".asics").hide();
+			$(".adidas").hide();
+		});
+
+		$(".join").click(function() {
+  			$(".modal-wrapper").fadeIn(2000);
+  			$("body").css("overflow-y", "hidden");
+  		});
+  		$(".close").click(function() {
+  			$(".modal-wrapper").fadeOut();
+  			$("body").css("overflow-y", "auto");
+  		});
+	</script>
 
 	
 </body>
