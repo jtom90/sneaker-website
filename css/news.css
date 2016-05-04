@@ -246,4 +246,9 @@ ol li {
 	display:none;
 }
 
+.footer li {
+	list-style-type: none;
+	padding:10px;
+}
+
 }

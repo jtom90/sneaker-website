@@ -232,7 +232,10 @@ h3 {
 #menu-bttn {
 	display:none;
 }
-
+.footer li {
+	list-style-type: none;
+	padding:10px;
+}
 
 }
 
