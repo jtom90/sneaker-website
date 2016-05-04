@@ -194,10 +194,6 @@ h3 {
 	/*left:100px;*/
 }
 
-.socialmedia img {
-	width:50px;
-	height:50px;
-}
 .col-xs-4 {
 	display:inline;
 	text-align:center;
@@ -233,6 +229,12 @@ h3 {
 
 .title2 {
 	font-weight:bold;
+}
+
+.socialmedia img {
+	width:40px;
+	height:40px;
+	/*padding:10px;*/
 }
 
 
