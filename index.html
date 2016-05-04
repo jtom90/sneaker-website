@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sneaker-Website</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
@@ -17,11 +19,11 @@
 
 		<div class="modal-wrapper">
 
-		<div id="sign-up-form">
+			<div id="sign-up-form">
 
-			<button class="close">X</button>
+				<button class="close">X</button>
 
-			<h5>Sign-Up</h5>
+				<h5>Sign-Up</h5>
 
 				<form>
 
@@ -51,47 +53,53 @@
 
 	<h1><a href="index.html">Royale</a></h1>
 
-	<nav class="left">
+		<nav class="left">
 
-		<ul>
+			<button id="menu-bttn"><i class="fa fa-bars"></i></button>
 
-			<li><a href="buy.html">BUY</a></li>
+			<ul>
 
-			<li><a href="sell.html">SELL</a></li>
+				<li><a href="buy.html">BUY</a></li>
 
-			<li><a href="trade.html">TRADE</a></li>
+				<li><a href="sell.html">SELL</a></li>
 
-			<li><a href="news.html">NEWS</a></li>
+				<li><a href="trade.html">TRADE</a></li>
 
-			<li class="messages"><i class="fa fa-inbox"></i><a href="#">Messages</a></li>
+				<li><a href="news.html">NEWS</a></li>
 
-			<li class="join"><a href="#">Join</a></li>
+				<div class="right">
 
-			<li class="sign"><a href="#">Sign-Up</a></li>
+				<li class="messages"><i class="fa fa-inbox"></i><a href="#">Messages</a></li>
+
+				<li class="join"><a href="#">Join</a></li>
+
+				<li class="sign"><a href="#">Sign-Up</a></li>
+
+			</div>
+
+			</ul>
+
+		</nav>
+
+		<ul class="bxslider">
+
+			<li><img src="images/roshe.jpg"></li>
+
+			<li><img src="images/jordan.jpg"></li>
+
+			<li><img src="images/yeezy2.jpg"></li>
+
+			<li><img src="images/newbalance.jpg"></li>
+
+			<li><img src="images/90s.jpg"></li>
 
 		</ul>
 
-	</nav>
+		<h3>TRENDING NOW</h3>
 
-	<ul class="bxslider">
+		<div class="trending">
 
-		<li><img src="images/roshe.jpg"></li>
-
-		<li><img src="images/jordan.jpg"></li>
-
-		<li><img src="images/yeezy2.jpg"></li>
-
-		<li><img src="images/newbalance.jpg"></li>
-
-		<li><img src="images/90s.jpg"></li>
-
-	</ul>
-
-	<h3>TRENDING NOW</h3>
-
-	<div class="trending">
-
-		<ul class="mini2">
+			<ul class="mini2">
 
   			<li><img src="images/kobe11s.jpg" title="Kobe 11s"></li>
 
@@ -110,40 +118,7 @@
 		  	<li><img src="images/kyrie2.jpg" title="Kyrie 2s"></li>
 
 		</ul>
-
-<!-- 		<figure>
-
-			<img src="images/kobe.jpg">
-
-				<figcaption>Kobe 11</figcaption>
-
-		</figure>
-
-		<figure>
-
-			<img src="images/huarache.jpg">
-
-				<figcaption>Nike Huaraches</figcaption>
-
-		</figure>
-
-		<figure>
-
-			<img src="images/tubular.jpg">
-
-				<figcaption>Adidas Tubular</figcaption>
-
-		</figure>
-
-		<figure>
-
-			<img src="images/yeezy.jpg">
-
-				<figcaption>Yeezy 350 Boost</figcaption>
-
-		</figure> -->
-
-	</div>
+		</div>
 
 	<div class="footer">
 
@@ -175,6 +150,12 @@
 
 		</div>
 
+		<div class="order2">
+			<li class="title2">Privacy & Terms</li>
+			<li>Privacy & Security</li>
+			<li>Terms and Conditions</li>
+		</div>
+
 		<div class="socialmedia">
 
 			<h4>Follow Us</h4>
@@ -194,6 +175,7 @@
 
 	<script src="http://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/index.js"></script>
 	<script>
   			$(".modal-wrapper").hide();
     		$('.bxslider').bxSlider({

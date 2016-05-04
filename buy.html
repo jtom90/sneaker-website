@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Buy</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,20 +14,25 @@
 	<link rel="stylesheet" type="text/css" href="css/buy.css">
 </head>
 <body>
+	<h1><a href="index.html">Royale</a></h1>
 	<form id="search">
         <input type="text" placeholder="Search..." required>
         <input type="button" value="Search">
 	</form>
-	<h1><a href="index.html">Royale</a></h1>
 	<nav class="left">
+		<button id="menu-bttn"><i class="fa fa-bars"></i></button>
 		<ul>
-			<li><a href="buy.html">BUY</a></li>
-			<li><a href="sell.html">SELL</a></li>
-			<li><a href="trade.html">TRADE</a></li>
-			<li><a href="news.html">NEWS</a></li>
-			<li class="messages"><i class="fa fa-inbox"></i><a href="#">Messages</a></li>
-			<li class="join">Join</li>
-			<li class="sign">Sign-Up</li>
+			<div class="left">
+				<li><a href="buy.html">BUY</a></li>
+				<li><a href="sell.html">SELL</a></li>
+				<li><a href="trade.html">TRADE</a></li>
+				<li><a href="news.html">NEWS</a></li>
+			</div>
+			<div class="right">
+				<li class="messages"><i class="fa fa-inbox"></i><a href="#">Messages</a></li>
+				<li class="join">Join</li>
+				<li class="sign">Sign-Up</li>
+		</div>
 		</ul>
 	</nav>
 	<nav id="second-nav">
@@ -102,9 +108,9 @@
 			</div>
 		<div class="col-xs-4 row3 nike">
 			<figure>
-			<img src="images/roshe2.jpg">
+			<img src="images/Kobe11s.jpg">
 				<figcaption>
-					Roshe One $80
+					Kobe 11s $200
 				</figcaption>
 		</figure>
 		</div>
@@ -132,7 +138,7 @@
 		<div class="email">
 			<li>SIGN UP FOR NEWSLETTER</li>
 				<form>
-					<input type="text"></input>
+					<input type="text" placeholder="Enter Email Address"></input>
 				</form>
 		</div>
 		<div class="order">
@@ -142,6 +148,11 @@
 			<li>Order Status</li>
 			<li>Contact Us</li>
 			<li>Careers</li>
+		</div>
+		<div class="order2">
+			<li class="title2">Privacy & Terms</li>
+			<li>Privacy & Security</li>
+			<li>Terms and Conditions</li>
 		</div>
 		<div class="socialmedia">
 			<h4>Follow Us</h4>
@@ -186,6 +197,20 @@
   			$(".modal-wrapper").fadeOut();
   			$("body").css("overflow-y", "auto");
   		});
+
+  		function navToggle() {
+			$('nav ul').slideToggle();
+		}
+
+		$("#menu-bttn").click(navToggle);
+
+		var width = $(window).width();
+
+		if (width > 768) {
+			$("nav ul").show();
+			$("nav ul li a").show();
+		// $(".trending .mini2 img").show();
+		}
 	</script>
 
 	

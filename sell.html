@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sell</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="css/sell.css">
 </head>
 <body>
+	<h1><a href="index.html">Royale</a></h1>
+
 	<form id="search">
 
         <input type="text" placeholder="Search..." required>
@@ -21,9 +24,9 @@
 
 	</form>
 
-	<h1><a href="index.html">Royale</a></h1>
-
 	<nav class="left">
+
+		<button id="menu-bttn"><i class="fa fa-bars"></i></button>
 
 		<ul>
 
@@ -35,11 +38,15 @@
 
 			<li><a href="news.html">NEWS</a></li>
 
-			<li class="messages"><i class="fa fa-inbox"></i><a href="#">Messages</a></li>
+			<div class="right">
 
-			<li class="join">Join</li>
+				<li class="messages"><i class="fa fa-inbox"></i><a href="#">Messages</a></li>
 
-			<li class="sign">Sign-Up</li>
+				<li class="join">Join</li>
+
+				<li class="sign">Sign-Up</li>
+
+			</div>
 
 		</ul>
 
@@ -67,15 +74,15 @@
 
 	<div class="container-fluid">
 
-		<div class="col-xs-4 adidas">
+		<div class="col-xs-4 row2 under-armour">
 
 			<figure>
 
-				<img src="images/superstar.jpg">
+				<img src="images/curry2.jpg">
 
 					<figcaption>
 
-						Adidas Superstar $100
+						Curry 2 $200
 
 					</figcaption>
 
@@ -150,23 +157,21 @@
 
 		</div>
 
-		<div class="col-xs-4 row2 under-armour">
+		<div class="col-xs-4 adidas">
 
 			<figure>
 
-				<img src="images/curry2.jpg">
+				<img src="images/superstar.jpg">
 
 					<figcaption>
 
-						Curry 2 $200
+						Adidas Superstar $100
 
 					</figcaption>
 
 			</figure>
 
 		</div>
-
-	</div>
 
 	</div>
 
@@ -221,6 +226,12 @@
 
 		</div>
 
+		<div class="order2">
+			<li class="title2">Privacy & Terms</li>
+			<li>Privacy & Security</li>
+			<li>Terms and Conditions</li>
+		</div>
+
 		<div class="socialmedia">
 
 			<h4>Follow Us</h4>
@@ -263,6 +274,20 @@
 			$(".asics").hide();
 			$(".adidas").hide();
 		});
+
+		function navToggle() {
+			$('nav ul').slideToggle();
+		}
+
+		$("#menu-bttn").click(navToggle);
+
+		var width = $(window).width();
+
+		if (width > 768) {
+			$("nav ul").show();
+			$("nav ul li a").show();
+		// $(".trending .mini2 img").show();
+		}
 	</script>
 
 </body>

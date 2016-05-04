@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trade</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,6 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="css/trade.css">
 </head>
 <body>
+
+	<h1><a href="index.html">Royale</a></h1>
+
 	<form id="search">
 
         <input type="text" placeholder="Search..." required>
@@ -21,9 +25,9 @@
 
 	</form>
 
-	<h1><a href="index.html">Royale</a></h1>
-
 	<nav class="left">
+
+		<button id="menu-bttn"><i class="fa fa-bars"></i></button>
 
 		<ul>
 
@@ -85,18 +89,12 @@
 
 		</div><!--  ** end div row 3 ** -->
 		<div class="col-xs-4 row3 nike">
-
 			<figure>
-
-				<img src="images/roshe2.jpg">
-
+				<img src="images/kobe11s.jpg">
 					<figcaption>
-
-					Roshe One for Roshes
-
+						Roshe for Kobe 11s
 					</figcaption>
-
-		</figure>
+			</figure>
 		</div>
 		<div class="col-xs-4 row3 nike">
 			<figure>
@@ -132,6 +130,12 @@
 			<li>Order Status</li>
 			<li>Contact Us</li>
 			<li>Careers</li>
+		</div>
+
+		<div class="order2">
+			<li class="title2">Privacy & Terms</li>
+			<li>Privacy & Security</li>
+			<li>Terms and Conditions</li>
 		</div>
 		<div class="socialmedia">
 			<h4>Follow Us</h4>
@@ -169,6 +173,20 @@
 			$(".asics").hide();
 			$(".adidas").hide();
 		});
+
+		function navToggle() {
+			$('nav ul').slideToggle();
+		}
+
+		$("#menu-bttn").click(navToggle);
+
+		var width = $(window).width();
+
+		if (width > 768) {
+			$("nav ul").show();
+			$("nav ul li a").show();
+		// $(".trending .mini2 img").show();
+		}
 		</script>
 
 	
