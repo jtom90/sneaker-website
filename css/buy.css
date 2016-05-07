@@ -237,5 +237,10 @@ h3 {
 	/*padding:10px;*/
 }
 
+.footer li {
+	list-style-type: none;
+	padding:10px;
+}
+
 
 }
